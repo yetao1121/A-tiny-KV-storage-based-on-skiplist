@@ -58,7 +58,7 @@ void load_file();          // 载入内存
 |         50         |  0.635806  |
 |        100         |  1.71985   |
 
-![image-20220607221440027](C:\Users\Peach\Desktop\插入读取压力测试.png)
+![image-20220607221440027](https://github.com/yetao1121/A-tiny-KV-storage-based-on-skiplist/blob/master/%E6%8F%92%E5%85%A5%E8%AF%BB%E5%8F%96%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95.png)
 
 可见，在插入、读取数据量不超过一百万的情况下，平均每秒可以处理写请求数：97.24万条，平均每秒可以处理读请求数：88.245条。
 
