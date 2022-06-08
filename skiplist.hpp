@@ -37,20 +37,20 @@ private:
     bool is_valid_string(const std::string& str);
 
 private:
-    // Max level of the skip list
+    // 跳表所允许的最大 level
     int max_level;
 
-    // current level of skip list
+    // 跳表当前的最大 level
     int cur_level;
 
-    // pointer to haed node
+    // 虚拟头节点
     Node<K, V>* head;
 
-    // file operator
+    // 文件操作
     std::ofstream file_write;
     std::ifstream file_read;
 
-    // skip list current element count
+    // 跳表当前的节点（键值对）个数
     int element_count;
 };
 
