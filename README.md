@@ -17,7 +17,7 @@ void delete_element(K);    // 删除键值为 key 的键值对
 ```
 
 ```c++
-bool search_element(K);    // 查找键值为 key 的键值对，成功显示该键值对，失败返回 false
+Node<K, V>* search_element(K);    // 查找键值为 key 的键值对，成功返回该键值对节点，失败返回 nullptr
 ```
 
 ```c++
