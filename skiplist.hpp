@@ -24,7 +24,7 @@ public:
     ~skiplist();
     int insert_element(K, V);
     void display_list();
-    bool search_element(K);
+    Node<K, V>* search_element(K);
     void delete_element(K);
     void dump_file();
     void load_file();
@@ -288,7 +288,7 @@ level 1         1    4     10         30         50|           70       100
 level 0         1    4   9 10         30   40    50+-->60      70       100
 */
 template<typename K, typename V> 
-bool skiplist<K, V>::search_element(K key) {
+Node<K, V>* skiplist<K, V>::search_element(K key) {
     std::cout << "search_element--------------------" << std::endl;
     Node<K, V>* current = head;
 
@@ -305,12 +305,12 @@ bool skiplist<K, V>::search_element(K key) {
     // 如果相等，说明已经找到了
     if (current != nullptr && current->get_key() == key ) {
         std::cout << "Found key: " << ", value: " << current->get_value() << std::endl;
-        return true;
+        return current;
     }
 
     // 否则，说明没有要找的键值对
     std::cout << "Not Found Key:" << key << std::endl;
-    return false;
+    return nullptr;
 }
 
 // 构造函数
