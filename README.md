@@ -85,6 +85,4 @@ copy Node.hpp 和 skiplist.hpp 两个文件即可使用此基于跳跃表的 KV 
 
 非常感谢：
 
-[youngyangyang04](https://github.com/youngyangyang04)
-
 《Redis设计与实战》
